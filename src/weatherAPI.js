@@ -7,11 +7,9 @@ async function weatherAutoIP() {
       { mode: "cors" }
     );
     const currentData = await getData.json();
-
-    console.log(currentData);
     return currentData;
   } catch {
-    console.log("error with weatherAutoIP");
+    console.log("error with weatherAutoIP API fetch");
   }
 }
 
@@ -24,9 +22,8 @@ async function weatherLocation(loc) {
       { mode: "cors" }
     );
     const currentData = await getData.json();
-    console.log(currentData);
     return currentData;
   } catch {
-    console.log("error with weatherLocation");
+    console.log("error with weatherLocation API fetch");
   }
 }
