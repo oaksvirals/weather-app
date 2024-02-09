@@ -1,11 +1,6 @@
 import "./style.css";
 import { weatherAutoIP, weatherLocation } from "./weatherAPI";
 
-// Data needed from API:
-// current.condition. icon/text
-// current. temp_c/temp_f/feelslike_c/feelslike_f
-// location. country/name/region
-
 let weatherIP = null;
 let weatherLoc = null;
 let activeLocation = null;
@@ -75,8 +70,6 @@ async function initWeatherData() {
   conditionTxt.textContent = conditionText;
 })();
 
-// initWeatherData();
-
 async function initWeatherLocation(location) {
   try {
     weatherLoc = await weatherLocation(location);
@@ -117,8 +110,6 @@ const visibility = document.querySelector("#visibility");
 const wind = document.querySelector("#wind");
 const uvIndex = document.querySelector("#uv");
 
-// const headingName = document.querySelector("#name");
-// const headingRegion = document.querySelector("#region");
 const headingCountry = document.querySelector("#country");
 const headingLocation = document.querySelector("#location");
 

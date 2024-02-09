@@ -25,7 +25,6 @@ header {
 }
 
 header h1 {
-  /* border: 1px dashed red; */
   grid-column: 1 / -1;
   text-align: center;
 }
@@ -36,7 +35,6 @@ header #search {
 
 header #searchBtn {
   width: 80%;
-  /* align-self: center; */
   justify-self: center;
 }
 
@@ -59,7 +57,6 @@ main {
 
 .display {
   margin-top: 100px;
-  /* border: 1px dashed red; */
   width: 500px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.33);
@@ -95,7 +92,6 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  /* border: 1px dashed red; */
   border-bottom: 1px dashed black;
 }
 
