@@ -5,6 +5,8 @@ let weatherIP = null;
 let weatherLoc = null;
 let activeLocation = null;
 
+// let's code!
+
 let tempC, tempF, feelsC, feelsF, country, name, region;
 let gustKPH,
   gustMPH,
