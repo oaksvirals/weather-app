@@ -8,44 +8,56 @@
   <body>
     <div class="app">
       <header>
-        <h1>Just A Little Weather App</h1>
+        <h1>Current Weather App</h1>
         <input id="search" type="text" placeholder="Search City or Zip Code" />
         <button id="searchBtn">Search</button>
       </header>
       <main>
         <div class="display">
-          <h3>Current Weather in Clanton, Alabama, United States</h3>
-          <img src="" alt="" />
+          <h2 id="country"></h2>
+          <div id="weatherImg"></div>
+          <p id="conditionText"></p>
+          <h2 id="location"></h2>
+          <!-- <h3 id="name"></h3>
+          <h3 id="region"></h3> -->
           <div class="temperature">
-            <h4>Current Temperature</h4>
-            <div class="temp-actual" id="temp-actual">61°</div>
-            <h4>Feels Like</h4>
-            <div class="temp-feelslike" id="temp-feelslike">68°</div>
+            <div class="actual-container">
+              <h4>Current</h4>
+              <div class="temp-actual" id="temp-actual">0</div>
+            </div>
+            <div class="feelslike-container">
+              <h4>Feels Like</h4>
+              <div class="temp-feelslike" id="temp-feelslike">0</div>
+            </div>
           </div>
-          <div class="percipitation">
+          <div class="percipitation other-data">
             <p>Percipitation</p>
             <p id="percipitation">0</p>
           </div>
-          <div class="humidity">
+          <div class="humidity other-data">
             <p>Humidity</p>
             <p id="humidity">0</p>
           </div>
-          <div class="pressure">
+          <div class="pressure other-data">
             <p>Pressure</p>
             <p id="pressure">0</p>
           </div>
-          <div class="visibility">
+          <div class="visibility other-data">
             <p>Visibility</p>
             <p id="visibility">0</p>
           </div>
-          <div class="wind">
+          <div class="wind other-data">
             <p>Wind</p>
             <p id="wind">0</p>
           </div>
-          <div class="uv">
+          <div class="uv other-data">
             <p>UV Index</p>
             <p id="uv">0</p>
           </div>
+        </div>
+        <div class="toggle">
+          <button id="F" class="activeBtn F">F</button>
+          <button id="C" class="C">C</button>
         </div>
       </main>
     </div>
